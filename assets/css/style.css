@@ -5,6 +5,28 @@ body {
 	background-color: #222;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	height: 100px;
+	width: 100px;
+	outline: black;
+	background-size: 100%, 100%;
+	background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+	content: '>';
+	font-size: 55px;
+	color: #222;
+}
+
+.carousel-control-prev-icon:after {
+	content: '<';
+	font-size: 55px;
+	color: #222;
+}
+
 .height-100vh {
 	min-height: 100vh;
 }
@@ -150,17 +172,6 @@ a.btn-dgc.white:hover, a.btn-dgc-mobile.white:hover {
 	/* background by SVGBackgrounds.com */
 }
 
-.welcome-div-bg:before {
-	content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url('../img/waves.png');
-	opacity: 0.1;
-}
-
 /* About Div */
 @media (min-width: 1200px) {
 	.timeline-div {
@@ -175,17 +186,19 @@ a.btn-dgc.white:hover, a.btn-dgc-mobile.white:hover {
 }
 
 .about-div-bg--blue {
-	background: linear-gradient(to right, #384280 , #025EA7);
+	background: #ad0036;
+	color: white;
 }
 
 .about-div-bg--white {
-	background: #ffe;
+	background: #ad0036;
+	color: white;
 }
 
 /* Judges Div */
 .judges-div-bg {
-	background: #FB4A65;
-	color: white;
+	background: #FFFDF6;
+	color: #222;
 }
 
 section#judges img {
@@ -202,7 +215,8 @@ section#judges img {
 
 /* Timeline Div */
 .timeline-div-bg {
-	background-color: #41C6ED;
+	background-color: #00C1F2;
+	color: white;
 }
 
 #timelineCarousel img {
@@ -214,26 +228,52 @@ section#judges img {
 
 /* Rules Div */
 .rules-div-bg {
-	background-color: #8EF1F6;
+	background-color: #FFFDF6;
+}
+
+.rules-div-bg img {
+	width: 192px;
+	height: auto;
+	margin: 0 auto;
 }
 
 /* Category Div */
 .category-div-bg {
-	background-color: #4ac0e6;
+	background-color: #FFFDF6;
 }
 
 /* Register Div */
 .register-div-bg {
-	background-color: #FB4A65;
+	background-color: #006A97;
+	color: white;
 }
 
 section#register img{
-	height: 64px;
+	width: 50%;
+	height: auto;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+	section#register img {
+		max-width: 90%;
+		height: auto;
+	}
+}
+
+@media (max-width: 768px){
+	section#register img {
+		max-width: 75%;
+		height: auto;
+	}
 }
 
 /* Footer */
+footer {
+	color: white;
+}
+
 footer a {
-	color: #ddd;
+	color: #aaa;
 }
 
 footer a:hover {
